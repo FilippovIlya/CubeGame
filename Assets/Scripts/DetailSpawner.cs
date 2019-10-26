@@ -8,12 +8,12 @@ public class DetailSpawner : MonoBehaviour
     public bool isSpawnready;
     //время между спанвами
     public float timeBetweenSpawn;
-    
+    private CubeController forscore;
     //массив деталей
     public GameObject[] Details;
-   
-    
-
+    private bool level2complete;
+    private bool level3complete;
+    private bool level4complete;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class DetailSpawner : MonoBehaviour
     void Start()
     {
         GameObject controller = GameObject.Find("Controller");
-        
+        forscore = controller.GetComponent<CubeController>();
     }
 
     // Update is called once per frame
@@ -33,7 +33,21 @@ public class DetailSpawner : MonoBehaviour
         {
             StartCoroutine(SpawnDetail());
         }
-        
+        if ( forscore.Score >= 500 && !level2complete)
+        {
+            timeBetweenSpawn -= 1;
+            level2complete = true;
+        }
+        if ( forscore.Score >= 1000 && !level3complete)
+        {
+            timeBetweenSpawn -= 1;
+            level3complete = true;
+        }
+        if ( forscore.Score >= 2000 && !level4complete)
+        {
+            timeBetweenSpawn -= 1;
+            level4complete = true;
+        }
     }
     IEnumerator SpawnDetail()
     {

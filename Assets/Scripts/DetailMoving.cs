@@ -30,17 +30,17 @@ public class DetailMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (speed != 0 && forscore.Score >= 1000 && !level2complete)
+        if (speed != 0 && forscore.Score >= 500 && !level2complete)
         {
             speed = speed + level2;
             level2complete = true;
         }
-        if (speed != 0 && forscore.Score >= 3000 && !level3complete)
+        if (speed != 0 && forscore.Score >= 1000 && !level3complete)
         {
             speed = speed + level2*2;
             level3complete = true;
         }
-        if (speed != 0 && forscore.Score >= 5000 && !level4complete)
+        if (speed != 0 && forscore.Score >= 2000 && !level4complete)
         {
             speed = speed + level2 * 2;
             level4complete = true;
