@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 77fc97fb89d9c1c49904a1eff208bcae, type: 2}
+  - {fileID: 2100000, guid: 1caacb2b6d29d31479d117faa32eff7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   level2: 5
   panelmove: {fileID: 0}
   panelrotation: {fileID: 0}
+  level2complete: 0
   parent: {fileID: 2978884229508903167}
 --- !u!54 &1740223751203041041
 Rigidbody:
@@ -270,6 +271,7 @@ MonoBehaviour:
   level2: 5
   panelmove: {fileID: 0}
   panelrotation: {fileID: 0}
+  level2complete: 0
   parent: {fileID: 2978884229508903167}
 --- !u!54 &7637441139625386968
 Rigidbody:

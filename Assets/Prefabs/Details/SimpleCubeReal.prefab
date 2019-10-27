@@ -54,11 +54,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7730081158436922795}
     m_Modifications:
-    - target: {fileID: 7961859321445357212, guid: e9a4c7e3ec5851141b1966cc5189f162,
-        type: 3}
-      propertyPath: m_Name
-      value: SimpleCube
-      objectReference: {fileID: 0}
     - target: {fileID: 1092455142887728349, guid: e9a4c7e3ec5851141b1966cc5189f162,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -129,11 +124,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7961859321445357212, guid: e9a4c7e3ec5851141b1966cc5189f162,
+        type: 3}
+      propertyPath: m_Name
+      value: SimpleCube
+      objectReference: {fileID: 0}
     - target: {fileID: 2728117940453649965, guid: e9a4c7e3ec5851141b1966cc5189f162,
         type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 4589489299924942584}
+    - target: {fileID: 2575550693828591827, guid: e9a4c7e3ec5851141b1966cc5189f162,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1caacb2b6d29d31479d117faa32eff7f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a4c7e3ec5851141b1966cc5189f162, type: 3}
 --- !u!4 &1716042999105058076 stripped

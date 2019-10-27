@@ -69,10 +69,13 @@ public class DelDetail : MonoBehaviour
         }
         for(int j = 0; j < baddetails.Count; j++)
             {
-                if (baddetails[j].GetComponent<DetailMoving>().speed == 0)
-                {
-                    baddetails.RemoveAt(j);
+                if (baddetails[j] != null) {
+                    if (baddetails[j].GetComponent<DetailMoving>().speed == 0)
+                    {
+                        baddetails.RemoveAt(j);
+                    }
                 }
+                
             }
         }
     }
